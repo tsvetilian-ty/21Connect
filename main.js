@@ -1,6 +1,8 @@
 const { app, BrowserWindow } = require('electron');
 const appName = require('./package.json').name;
 const path = require('path');
+const Server = require('./controllers/mainController');
+
 
 let main = null;
 let tray = null;
