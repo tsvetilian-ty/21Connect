@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "path": "^0.12.7",
+    "electron-windows-notifications": "^2.0.1",
     "ip": "^1.1.5",
     "socket.io": "^2.0.3"
   },
