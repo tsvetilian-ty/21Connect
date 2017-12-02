@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.18.0",
     "path": "^0.12.7",
     "electron-windows-notifications": "^2.0.1",
     "ip": "^1.1.5",
