@@ -31,9 +31,25 @@ io.on('connection', (socket) => {
     // Broadcast Events
     socket.emit('info', cast.info(socket.id));
 
+    // Incomming Events
+    socket.on('lowBattery', () => {
+      receive.lowBattery();
+      socket.emit('done');
+    });
+    socket.on('incomingCall', (data) => {
+      receive.incomingCall(data);
+      socket.emit('done');
+    });
     socket.on('newNotification', (data) => {
       receive.newNotification(data);
-      console.log(data);
       socket.emit('done');
+    });
+    socket.on('chargingBattery', () => {
+      receive.chargingBattery();
+      socket.emit('done');
+    });
+  
+    socket.on('disconnect', () => {
+      console.log('Disconnected: ', socket.id);
     });
 });
