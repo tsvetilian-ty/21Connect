@@ -12,10 +12,13 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.18.0",
-    "path": "^0.12.7",
     "electron-windows-notifications": "^2.0.1",
     "ip": "^1.1.5",
-    "socket.io": "^2.0.3"
+    "nedb": "^1.8.0",
+    "path": "^0.12.7",
+    "qrcode": "^1.0.0",
+    "socket.io": "^2.0.3",
+    "uuid-token-generator": "^1.0.0"
   },
   "devDependencies": {
     "electron": "^1.7.9"
