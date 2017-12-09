@@ -22,10 +22,15 @@ const server = require('http').createServer((req, res) => {
 });
 const io = require('socket.io')(server, { pingTimeout: 15000, pingInterval: 15000 });
 
+const { auth } = require('./authentication');
 const cast = require('./broadcasters');
 const receive = require('./receivers');
 
 server.listen(6677);
+
+io.use((socket, next) => {
+  auth(socket, next);
+});
 
 io.on('connection', (socket) => {
     // Broadcast Events
