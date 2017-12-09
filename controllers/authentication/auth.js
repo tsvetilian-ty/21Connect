@@ -9,5 +9,6 @@ exports.autherization = (socket, next) => {
       return;
     }
     sysLog(socket.id);
+    next();
   });
 };
