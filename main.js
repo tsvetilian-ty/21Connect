@@ -1,4 +1,7 @@
-const { app, BrowserWindow } = require('electron');
+const {
+  app, BrowserWindow, Menu, ipcMain, Tray, desktopCapturer,
+} = require('electron');
+const { contextMenu, getImg, sysLog } = require('./utils');
 const appName = require('./package.json').name;
 const path = require('path');
 const Server = require('./controllers/mainController');
