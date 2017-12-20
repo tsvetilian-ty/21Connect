@@ -1,11 +1,16 @@
+// Register utility file
 const hostInfo = require('./hostInfo');
-const images = require('./images');
 const logger = require('./logger');
+const contextMenu = require('./contextMenu');
+const images = require('./images');
 
+// Make the utility public
 module.exports = {
   contextMenu: contextMenu.contextMenuConfig,
-    getImg: images.getImg,
-    hostInfo: hostInfo.hostInfo,
-    socketLog: logger.log,
-    sysLog: logger.sys,
-  };
+  getImg: images.getImg,
+  getTmp: images.getTmp,
+  deleteTmp: images.deleteTmp,
+  socketLog: logger.log,
+  sysLog: logger.sys,
+  hostInfo: hostInfo.hostInfo,
+};
