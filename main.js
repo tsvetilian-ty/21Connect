@@ -54,3 +54,7 @@ app.on('window-all-closed', () => {
     app.quit();
   }
 });
+
+ipcMain.on('qr-generating-error', (e) => {
+  sysLog(e);
+});
