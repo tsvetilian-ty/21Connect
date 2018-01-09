@@ -1,15 +1,26 @@
 {
   "name": "21Connect",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.1.2",
+  "description": "Connect your mobile device with your PC",
+  "main": "main.js",
+  "build": {
+    "appId": "phone.integration.21connect",
+    "win": {
+      "target": "nsis",
+      "icon": "./assets/windows-icon.ico",
+      "asar": false
+    }
+  },
   "scripts": {
-    "start": "electron ./main.js", 
+    "start": "electron ./main.js",
+    "rebuild": "electron-rebuild -m ./node_modules",
+    "build:win": "electron-builder -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": "https://github.com",
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Tsvetilian Yankov",
+  "license": "Apache-2.0",
   "dependencies": {
     "axios": "^0.18.0",
     "electron-windows-notifications": "^2.0.1",
@@ -23,6 +34,8 @@
   "devDependencies": {
     "electron": "^1.7.9",
     "electron-builder": "^19.49.0",
-    "electron-rebuild": "^1.7.3"
+    "electron-rebuild": "^1.7.3",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.10.0"
   }
 }
