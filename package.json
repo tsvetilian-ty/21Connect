@@ -1,7 +1,7 @@
 {
   "name": "21Connect",
   "version": "0.1.2",
-  "description": "Hello World",
+  "description": "Connect your mobile device with your pc",
   "main": "main.js",
   "build": {
     "appId": "phone.integration.21connect",
@@ -20,7 +20,7 @@
   "repository": "https://github.com",
   "keywords": [],
   "author": "Tsvetilian Yankov",
-  "license": "Apache-2.0",
+  "license": "MIT",
   "dependencies": {
     "axios": "^0.18.0",
     "electron-windows-notifications": "^2.0.1",
