@@ -4,6 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+        body {
+            font-family: 'Open Sans', serif;
+            background: #282c35;
+            -webkit-user-select: none;
+            overflow: hidden;
+        }
+
+        #wrapper {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #info {
+            display: flex;
+            flex-direction: column;
+            color: #FAFAFA;
+            margin-left: 5px;
+        }
+
+        #google_play {
+            width: 50px;
+            height: 50px;
+        }
+
+        #app_title {
+            font-size: 28px;
+            flex: 1;
+        }
+
+        #build {
+            flex: 1;
+            font-size: 14px;
+        }
+
+        #instructions {
+            flex: 5;
+        }
+
+        #_canvas {
+            min-height: 180px;
+            min-width: 180px;
+            border: 3px solid #388e3c;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
 <div id="wrapper">

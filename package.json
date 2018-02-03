@@ -1,7 +1,7 @@
 {
   "name": "21Connect",
   "version": "0.1.2",
-  "description": "Connect your mobile device with your PC",
+  "description": "Hello World",
   "main": "main.js",
   "build": {
     "appId": "phone.integration.21connect",

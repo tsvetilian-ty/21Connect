@@ -1,3 +1,4 @@
+const crypto = require('crypto');
 const { hostInfo } = require('../../utils');
 
 exports.broadcast = socketid => ({

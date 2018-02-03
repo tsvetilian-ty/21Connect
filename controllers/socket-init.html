@@ -13,6 +13,18 @@
 <script src="/socket.io/socket.io.js"></script>
 <script>
   const socket = io(`http://192.168.1.101:6677`, { query: "auth=MzZTWxMbOyDDANQfjNwxLV0fYfaPnMYInbmHJozxxvv" });
+  socket.on('info', (data) => {
+    console.log(data)
+    document.getElementById('info').innerHTML += data.host_name
+  });
+  socket.emit('lowBattery', { lowBattery: true })
+  // socket.emit('chargingBattery')
+  //socket.emit('incommingCall', { number: '+35956654646' })
+  //socket.emit('newDevice', { name: 'Samsung S8', data: 'd5a4gda5' })
+  // socket.emit('newNotification', { from: 'Facebook', content: 'Some notification from facebook' })
+  socket.on('done', () => {
+    socket.disconnect()
+  });
 </script>
 
 </html>

@@ -3,6 +3,10 @@ const youtube = require('../actions/youtubeActions');
 
 exports.receive = (data) => {
   switch (data.pkg) {
+    case 'yankov.tsvetilian.notificationtester':
+      // youtube.findVideo(data);
+      notification.factory('FASADSAx', `${data.title}`, `${data.content}`, 'new_notification', data);
+      break;
     case 'com.android.systemui':
       notification.factory('SYS_UI_NOTIFICATION', `${data.title}`, `${data.content}`, 'system_android', data);
       break;

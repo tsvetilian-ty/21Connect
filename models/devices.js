@@ -1,3 +1,4 @@
+/* eslint consistent-return: 0 */
 const path = require('path');
 const Datastore = require('nedb');
 const Uuid = require('uuid-token-generator');
