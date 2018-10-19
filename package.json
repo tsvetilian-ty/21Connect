@@ -17,7 +17,7 @@
     "build:win": "electron-builder -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": "https://github.com",
+  "repository": "https://github.com/tsvetilian-ty/21Connect",
   "keywords": [],
   "author": "Tsvetilian Yankov",
   "license": "MIT",
