@@ -4,7 +4,7 @@
 
 Integrates:
 
-- Calls
+- Calls indicator
 - Notifications
 - Low battery
 
@@ -43,8 +43,10 @@ $ npm run build:win
 
 ## Apps
 
-Notifications from Youtube, Discord, Facebook, Instagram, Messanger, Twitter and Vider have icons or special view you can view them in.
+Notifications from Youtube, Discord, Facebook, Instagram, Messanger, Twitter and Vider have icons or special view you can see them in.
 
 ![Youtube Advanced View](screenshots/youtube_advanced.PNG)
 
 ![Twitter](screenshots/twitter.PNG)
+
+![Charging](screenshots/charging.PNG)
