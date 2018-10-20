@@ -2,6 +2,12 @@
 
 21Connect help you to connect your android smart phone or tablet with your Windows (8.1 and above) PC. 
 
+21Connect integrates:
+
+- Calls
+- Notifications
+- Low battery
+
 [Android App](https://github.com/tsvetilian-ty/21Connect-Android-App)
 
 [Download for Windows](https://github.com/tsvetilian-ty/21Connect/releases)
@@ -11,7 +17,7 @@
 - [Usage](#usage)
 - [Build](#build)
 - [Apps with custom views](#apps)
-- [License](LICENSE.dm)
+- [License](LICENSE.md)
 
 ## Usage
 
