@@ -2,7 +2,7 @@
 
 21Connect help you to connect your android smart phone or tablet with your Windows (8.1 and above) PC. 
 
-21Connect integrates:
+Integrates:
 
 - Calls
 - Notifications
